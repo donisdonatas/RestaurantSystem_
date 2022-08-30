@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Lentelės darymas</title>
+</head>
+<body>
+    <table class="table1">
+        <caption>Užduotis 1</caption>
+        <tr>
+            <td class="blod-text">Vardas</td>
+            <td>Jonas Žirmūnas</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="blod-text">Telefono numeris</td>
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="blod-text">Mėgstamiausios spalvos</td>
+            <td class="back-orange white-text">Oranžinė</td>
+        </tr>
+        <tr>
+            <td class="back-blue white-text">Mėlyna</td>
+        </tr>
+        <tr>
+            <td class="back-green white-text">Žalia</td>
+        </tr>
+    </table>
+
+    <table class="table table-bordered" style="width:400px">
+        <caption>Užduotis 1 su bootstrap</caption>
+        <tr>
+            <th scope="row">Vardas</th>
+            <td>Jonas Žirmūnas</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="row">Telefono numeris</th>
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="row">Mėgstamiausios spalvos</th>
+            <td class="back-orange white-text">Oranžinė</td>
+        </tr>
+        <tr>
+            <td class="back-blue white-text">Mėlyna</td>
+        </tr>
+        <tr>
+            <td class="back-green white-text">Žalia</td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <caption>Užduotis 2.a</caption>
+        <tr class="table2row">
+            <th>Vardas</th>
+            <th>Pavardė</th>
+            <th>Amžius</th>
+        </tr>
+        <tr class="table2row">
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>66</td>
+        </tr>
+        <tr class="table2row">
+            <td>Steve</td>
+            <td>Wozniak</td>
+            <td>71</td>
+        </tr>
+    </table>
+
+    <table class="table3">
+        <caption>Užduotis 2.b</caption>
+        <tr class="table3row">
+            <th>Vardas</th>
+            <th>Pavardė</th>
+            <th>Amžius</th>
+        </tr>
+        <tr class="table3row">
+            <td colspan="2" class="maddona">Madonna</td>
+            <td>63</td>
+        </tr>
+        <tr class="table3row">
+            <td>Paul</td>
+            <td>Giamatti</td>
+            <td rowspan="2">53</td>
+        </tr>
+        <tr class="table3row">
+            <td>Vin</td>
+            <td>Diesel</td>
+        </tr>
+    </table>
+</body>
+</html>

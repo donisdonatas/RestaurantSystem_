@@ -1,0 +1,58 @@
+body {
+	width: 500px;
+	height: 900px;
+	background-color: lightgrey;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.store {
+	width: 150px;
+}
+
+input {
+	display: block;
+	/*text-align: center;*/
+	padding-left: 5px;
+	margin: 5px auto;
+	width: 400px;
+	height: 40px;
+	border-radius: 7px;
+}
+
+button {
+	width: 400px;
+	height: 40px;
+	background-color: lightblue;
+	border-radius: 7px;
+}
+
+.logo {
+	margin: 50px auto;
+	width: 300px;
+}
+
+.loginform, .signup {
+	background-color: white;
+	/*border-radius: 10px;
+	box-shadow: 2px 2px #888888;*/
+	border: 2px solid #888888;
+}
+
+.loginform {
+	padding-bottom: 20px;
+}
+
+.signup {
+	margin-top: 10px;
+}
+
+.ficon {
+	width: 20px;
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+}
+	

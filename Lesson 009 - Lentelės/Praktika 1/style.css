@@ -1,0 +1,111 @@
+body {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+
+}
+
+h1 {
+    width: 60%;
+    margin: auto;
+    color: white;
+    text-align: left;
+    padding: 40px 0 10px 0;
+    font-size: 2em;
+}
+
+nav {
+    margin: auto;
+    width: 60%;
+    background-color: rgb(199, 176, 49);
+    text-align: right;
+    font-size: 0.9em;
+    padding: 15px 0;
+}
+
+nav a {
+    color: antiquewhite;
+    margin: 0 10px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+img {
+    height: 150px;
+    
+}
+
+.avivalogo {
+    /*Šito nerodo*/
+    color: white;
+}
+
+.about {
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tables {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(36, 36, 102);
+    color: aliceblue;
+    padding: 15px 0;
+}
+
+h2 {
+    padding-left: 20%;
+    text-align: left;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    border: 1px solid red;
+    border-collapse: collapse;
+    padding-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid red;
+}
+
+td {
+    padding: 5px;
+}
+
+tfoot {
+    text-align: right;
+}
+
+.contacts {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+#about, #contacts {
+    text-align: left;
+    padding-left: 0;
+}
+
+.contacts a {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: rgb(199, 170, 77);
+    padding: 1px;
+    font-size: 0.8em;
+    color: aliceblue;
+}

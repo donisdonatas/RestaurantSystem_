@@ -1,0 +1,113 @@
+.top-box {
+    background-color: rgb(187, 140, 11);
+}
+
+.main-content-box {
+    background-color: rgb(148, 199, 53);
+}
+
+.middle-box {
+    background-color: rgb(17, 110, 192);
+}
+
+.bottom-box {
+    background-color: rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 767px) {
+
+    .top-box {
+        display: block;
+        margin: 5px 5px;
+        height: 50px;
+    }
+
+    .main-content-box {
+        display: block;
+        margin: 15px 5px;
+        height: 75px;
+    }
+
+    .middle-box {
+        display: block;
+        margin: 10px 5px;
+        height: 100px;
+    }
+
+    .bottom-box {
+        display: block;
+        margin: 10px 5px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .top-box {
+        display: block;
+        margin: 5px 5px;
+        height: 50px;
+    }
+
+    .main-content-box {
+        display: block;
+        margin: 15px 5px;
+        height: 150px;
+    }
+
+    .middle-box {
+        display: block;
+        margin: 10px 5px;
+        height: 100px;
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .bottom-box {
+        margin: 5px 5px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .top-box {
+        margin: 5px 5px;
+        height: 50px;
+    }
+
+    .main-content-box {
+        display: block;
+        margin: 15px 5px;
+        height: 250px;
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .middle-box {
+        display: block;
+        margin: 10px 5px;
+        height: 150px;
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .bottom-box {
+        margin: 5px 5px;
+        height: 80px;
+    }
+}

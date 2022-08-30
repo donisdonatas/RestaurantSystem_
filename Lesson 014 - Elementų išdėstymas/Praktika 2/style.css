@@ -1,0 +1,101 @@
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /*width: 80%;*/
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+span {
+    padding: 0 8px;
+}
+
+.socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+}
+
+.socialIcons img {
+    width: 20px;
+}
+
+.violetText {
+    color: rgb(100, 92, 255);
+}
+
+section {
+    /*width: 50%;*/
+    margin: 5% auto 2% auto;
+    text-align: center;
+ 
+    /*
+    display: flex;
+    justify-content: center;
+    */
+}
+
+section div {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    margin-top: 20px;
+    box-shadow: 2px 2px 8px rgb(184, 183, 183);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.addTask {
+    margin-bottom: 50px;
+}
+
+.task {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.task img {
+    display: flex;
+    justify-items: flex-end;
+    width: 15px;
+}
+
+.finished::before {
+    content: url("https://icons.iconarchive.com/icons/jackietran/rounded/32/Done-icon.png");
+    width: 10px;
+}
+
+.finished {
+    text-decoration: line-through;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    border: 1px solid rgb(182, 182, 182);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button {
+    width: 100px;
+    height: 34px;
+    color: antiquewhite;
+    background-color: rgb(100, 92, 255);
+    /*border: 1px solid rgb(124, 107, 170);*/
+    border: none;
+    /*border-radius: 5px;*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

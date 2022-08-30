@@ -1,0 +1,18 @@
+tr {
+    height: 100px;
+}
+
+td {
+    width: 100px;
+}
+
+
+tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even) {
+    background-color: rgb(225, 225, 225);
+    border: 2px solid rgb(140, 140, 140);
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+    border: 2px solid black;
+}

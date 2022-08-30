@@ -1,0 +1,101 @@
+body {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(155,155,155,50%);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+aside {
+    width: 20%;
+    min-width: 200px;
+    height: 1000px;
+    background-color: rgba(36, 40, 44, 100%);
+}
+
+.addLineDown {
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 2px rgba(67, 71, 75, 0.5);
+    text-align: left;
+    font-size: 24px;
+    color: rgba(221,221,221,255);
+    line-height: 2em;
+}
+ul.addLineDown {
+    padding: 20px 0;
+}
+
+aside h1.addLineDown {
+    font-size: 3em;
+    line-height: 1em;
+    padding: 30px 0;
+}
+
+section {
+    display: inline-block;
+    width: 80%;
+}
+
+section h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h1 > span {
+    color: rgba(187,187,187,255);
+    font-weight: 100;
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+    margin-left: 100px;
+}
+
+nav a {
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: rgba(155,155,155,255);
+    
+    /*padding-left: 200px;*/
+}
+
+p.movieName {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 0 20px;
+    line-height: normal;
+    margin: 10px 0 5px 0;
+}
+
+p.genre {
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 0 0 20px 20px;
+    line-height: normal;
+    margin: 10px 0 15px 0;
+    color: rgba(155,155,155,255);
+}

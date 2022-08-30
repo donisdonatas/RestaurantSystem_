@@ -1,0 +1,23 @@
+body {
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+h1>span {
+    color: rgb(32, 117, 167);
+}
+
+p.sutarpais {
+    width: 300px;
+    line-height: 2em;
+}
+
+.pasvires {
+    font-style: italic;
+    width: 600px;
+}
+
+a.nuoroda {
+    color: rgb(18, 158, 18);
+    font-style: unset;
+}

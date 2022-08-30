@@ -1,0 +1,72 @@
+table {
+    margin: 50px;
+    border-collapse: collapse;
+}
+
+.table1 td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 7px;
+}
+
+.back-orange {
+    background-color: orange;
+}
+
+.back-blue {
+    background-color: blue;
+}
+
+.back-green {
+    background-color: green;
+}
+
+.white-text {
+    color: white;
+}
+
+.blod-text {
+    font-weight: bold;
+    font-family: "Quando", serif;
+}
+
+/*==================================*/
+
+.table2 {
+    text-align: center;
+    border: 2px solid red;
+    width: 450px;
+    padding: 10px;
+}
+
+.table2row {
+    width: 150px;
+}
+
+.table2 th, td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+/*==================================*/
+
+
+.table3 {
+    text-align: center;
+    border: 2px solid red;
+    width: 450px;
+    padding: 10px;
+}
+
+.table3row {
+    width: 150px;
+}
+
+.table3 th, td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.maddona {
+    color: white;
+    background-color: rgb(223, 159, 87);
+}

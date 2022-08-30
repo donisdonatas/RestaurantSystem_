@@ -1,0 +1,26 @@
+.orange {
+    /*Ryški oranžinė - HEX formatu*/
+    background-color: orange;
+} 
+.babyPink {
+    /*Šiek tiek permatoma baby pink - HEXA formatu*/
+    background-color: #f4c2c2b7;
+}
+
+.darkGrey {
+    /*Tamsiai pilka - RGB formatu*/
+    background-color: rgb(169, 169, 169);
+}
+.olive50 {
+    /*Pusiau permatoma alyvinė - RGBA formatu*/
+    background-color: rgba(109,113,46, 50%);
+}
+.redHSL {
+    /*Sodri, vidutinio šviesumo raudona - HSL formatu*/
+    background-color: hsl(0, 100%, 50%);
+}
+
+.redHSLA {
+    /*Sodri, vidutinio šviesumo raudona, pusiau permatoma - HSLA formatu*/
+    background-color: hsla(0, 100%, 50%, 50%);
+}

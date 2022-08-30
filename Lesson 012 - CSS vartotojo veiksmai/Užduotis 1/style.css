@@ -1,0 +1,86 @@
+main {
+    width: 400px;
+    border: 2px solid rgb(200, 200, 200);
+    padding: 10px;
+    line-height: 2em;
+    box-shadow: 2px 2px rgb(100, 100, 100);
+    background-color: rgba(233, 233, 233, 0.582);
+    margin: 20px auto;
+}
+
+h2 {
+    margin: 10px 5px;
+}
+
+.radiogroup {
+    /*width: 50%;*/
+    margin-left: 41%;
+    margin-bottom: 5px;;
+}
+
+.fieldsgroup input {
+    width: 50%;
+    margin: 5px auto;
+    height: 15px;
+}
+
+.fieldsgroup label {
+    /*width: 150px;*/
+    width: 45%;
+    text-align: right;
+    display: inline-block;
+}
+
+fieldset {
+    margin-left: 20px;
+    width: 75%;
+    display: inline-block;
+    /*text-align: left;*/
+}
+
+button {
+    display: block;
+    margin: 30px auto 10px auto;
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: rgb(202, 188, 170);
+}
+
+input:focus {
+    outline: 3px solid rgb(38, 120, 226);
+}
+
+.fieldsgroup input:invalid, .fieldsgroup input:out-of-range {
+    border: 1px solid rgb(221, 90, 90);
+}
+
+.fieldsgroup input:valid, .fieldsgroup input:in-range {
+    border: 1px solid rgb(94, 221, 90);
+}
+
+button:hover {
+    background-color: rgb(80, 100, 80);
+    color: rgb(224, 225, 226);
+    font-weight: bold;
+}
+
+select {
+    width: 50%;
+}
+
+
+
+/** Panaikinam rodyklytes prie kortelės numerio įrašymo lauko **/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/** Panaikinam rodyklytes prie kortelės numerio įrašymo lauko **/

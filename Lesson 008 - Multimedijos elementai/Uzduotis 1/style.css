@@ -1,0 +1,7 @@
+.jpg, .png, .gif, .svg, .fa-dropbox {
+    background-color: #eee;
+    height: 500px;
+    width: 600px;
+    object-fit: contain;
+    font-size: 100px;
+}
