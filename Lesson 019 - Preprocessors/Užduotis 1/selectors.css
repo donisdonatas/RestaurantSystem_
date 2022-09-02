@@ -1,0 +1,53 @@
+.navigacija ul:first-child {
+  color: #009bd9;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  width: 20px;
+}
+
+.light-blue {
+  color: #009bd9;
+  font-weight: 500;
+}
+
+.dark-blue {
+  color: #023b6d;
+  font-weight: 500;
+}
+.dark-blue:hover {
+  color: #009bd9;
+  text-decoration: none;
+}
+
+i {
+  color: #009bd9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-menu a {
+  color: #023b6d;
+  font-weight: 300;
+}
+.dropdown-menu a:hover {
+  color: #009bd9;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.members-button {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+.members-button:hover {
+  background-color: #0a58ca;
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=selectors.css.map */

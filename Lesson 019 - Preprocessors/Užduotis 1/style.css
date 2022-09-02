@@ -1,0 +1,68 @@
+.container-fluid {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.iconAndText {
+    display: inline;
+}
+
+.p-4 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    gap: 10%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.container-box {
+    padding: auto 10%;
+}
+
+.width-sm {
+    display: block;
+    margin: 4rem auto;
+    width: 40%;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.container-individual {
+    padding: auto 20% auto 20%;
+}
+
+.jumbotron {
+    padding: 3em 5em;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 20rem;
+}
+
+.grey-field-cntered {
+    margin: auto 10%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+}

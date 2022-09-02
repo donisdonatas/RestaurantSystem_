@@ -1,0 +1,67 @@
+$light-blue-color: #009bd9;
+$dark-blue-color: #023b6d;
+$logo-width: 20px;
+$font300: 300;
+$font500: 500;
+$members-border: 1px solid #dee2e6;
+$members-hover-color: #0a58ca;
+
+
+@mixin link-adaption() {
+    color: $light-blue-color;
+    text-decoration: none;
+}
+
+.navigacija ul {
+    &:first-child {
+        @include link-adaption();
+    }
+}
+
+li {
+    display: inline;
+}
+
+img {
+    width: $logo-width;
+}
+
+.light-blue {
+    color: $light-blue-color;
+    font-weight: $font500;
+}
+
+.dark-blue {
+    color: $dark-blue-color;
+    font-weight: $font500;
+
+    &:hover {
+        @include link-adaption();
+    }
+}
+
+i {
+    @include link-adaption();
+    font-weight: $font500;
+}
+
+.dropdown-menu {
+    a {
+        color: $dark-blue-color;
+        font-weight: $font300;
+    }
+    a:hover {
+        @include link-adaption();
+        font-weight: $font300;
+    }
+}
+
+.members-button {
+    border-left: $members-border;
+    border-right: $members-border;
+
+    &:hover {
+        background-color: $members-hover-color;
+        color: rgb(255, 255, 255);
+    }
+}
