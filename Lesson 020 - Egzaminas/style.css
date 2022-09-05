@@ -30,6 +30,44 @@ nav a {
 .textBox {
   margin-left: 5%;
 }
+.textBox h1 {
+  font-size: 2.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+.textBox p {
+  font-size: 1.2em;
+  color: rgb(136, 136, 136);
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+
+/*
+.button {
+    width: 200px;
+    height: 60px;
+    border: 5px solid transparent;
+    border-image: url("assets/assets/background.svg") 10% round;
+    border-radius: 20px;
+    padding: 10%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+*/
+.button {
+  width: 250px;
+  height: 60px;
+  border-top: 5px solid red;
+  border-right: 5px solid green;
+  border-bottom: 5px solid yellow;
+  border-left: 5px solid blue;
+  border-radius: 40px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .lounch {
   font-size: 1.1em;
@@ -38,19 +76,118 @@ nav a {
   margin-top: 20%;
 }
 
+.upsell {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: 30vh;
+  background-image: url("assets/assets/background.svg");
+  background-position-x: center;
+  display: flex;
+  align-items: flex-end;
+}
+.upsell div {
+  margin: 5%;
+}
+.upsell div h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.upsell div p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 100%;
 }
-
-.imgBox {
+.hero .imgBox {
   width: 200%;
   z-index: -1;
 }
-
-.imgBox img {
+.hero .imgBox img {
   width: 100%;
+}
+
+.press {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr fr;
+  padding: 5%;
+}
+.press .shortenName {
+  height: 40px;
+  overflow: hidden;
+}
+.press img {
+  width: 70%;
+  height: 40px;
+  /*z-index: -1;*/
+  padding: 5%;
+}
+.press .hidenImg {
+  display: none;
+}
+
+.showcase {
+  margin: 5%;
+}
+.showcase h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.showcase .showText {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: rgb(136, 136, 136);
+}
+.showcase .showText a {
+  color: rgb(136, 136, 136);
+}
+
+.cardsSection {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card {
+  width: 290px;
+}
+.card .cardImage {
+  width: 100%;
+  margin: 0;
+}
+.card .cardContent {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  padding: 5%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.serie {
+  color: #FF8139;
+}
+
+.nftName, .nftPrice {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4em;
+}
+
+.nftNumber, .bidaction, .untilStart {
+  color: #777777;
+}
+
+.nftNumber, .untilStart {
+  font-size: 1.2em;
 }
 
 .socialIcons img {

@@ -1,8 +1,18 @@
+$paragraphColor: rgb(136, 136, 136);
+$fontf: 'Inter', sans-serif;
+
 body {
     min-width: 428px;
     max-width: 575px;
     margin: auto;
     border: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+@mixin h2text {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -30,6 +40,47 @@ nav {
 
 .textBox {
     margin-left: 5%;
+
+    h1 {
+        font-size: 2.5em;
+        font-family: $fontf;
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.2em;
+        color: $paragraphColor;
+        line-height: 1.5em;
+        margin-bottom: 50px;
+    }
+}
+
+
+/*
+.button {
+    width: 200px;
+    height: 60px;
+    border: 5px solid transparent;
+    border-image: url("assets/assets/background.svg") 10% round;
+    border-radius: 20px;
+    padding: 10%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+*/
+
+.button {
+    width: 250px;
+    height: 60px;
+    border-top: 5px solid red;
+    border-right: 5px solid green;
+    border-bottom: 5px solid yellow;
+    border-left: 5px solid blue;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .lounch {
@@ -39,19 +90,130 @@ nav {
     margin-top: 20%;
 }
 
+.upsell {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 30vh;
+    background-image: url("assets/assets/background.svg");
+    background-position-x: center;
+    display: flex;
+    align-items: flex-end;
+
+    div {
+        margin: 5%;
+
+        h2 {
+            @include h2text;
+        }
+    
+        p {
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+    }
+}
+
 .hero {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
+
+    .imgBox {
+        width: 200%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
-.imgBox {
-    width: 200%;
-    z-index: -1;
+
+.press {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr fr;
+    padding: 5%;
+    
+    .shortenName {
+        height: 40px;
+        overflow: hidden;
+    }
+
+    img {
+        width: 70%;
+        height: 40px;
+        /*z-index: -1;*/
+        padding: 5%;
+    }
+
+    .hidenImg {
+        display: none;
+    }
 }
 
-.imgBox img {
-    width: 100%;
+
+.showcase {
+    margin: 5%;
+
+    h2 {
+        @include h2text;
+    }
+
+    .showText {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: $paragraphColor;
+
+        a {
+            color: $paragraphColor;
+        }
+    }
+
+
+}
+
+.cardsSection {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    width: 290px;
+    
+    .cardImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cardContent {
+        display: flex;
+        justify-content: space-between;
+        background-color: #EEEEEE;
+        padding: 5%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.serie {
+    color: #FF8139;
+
+}
+
+.nftName, .nftPrice {
+    font-family: $fontf;
+    font-size: 1.4em;
+}
+
+.nftNumber, .bidaction, .untilStart {
+    color: #777777;
+}
+
+.nftNumber, .untilStart {
+    font-size: 1.2em;
 }
 
 .socialIcons img {
