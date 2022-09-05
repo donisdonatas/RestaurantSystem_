@@ -1,0 +1,60 @@
+body {
+  min-width: 428px;
+  max-width: 575px;
+  margin: auto;
+  border: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  text-align: center;
+}
+
+.logo {
+  height: 36px;
+}
+
+.hamburgerMenu {
+  width: 36px;
+}
+
+nav {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+}
+
+.textBox {
+  margin-left: 5%;
+}
+
+.lounch {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #FF3998;
+  margin-top: 20%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+}
+
+.imgBox {
+  width: 200%;
+  z-index: -1;
+}
+
+.imgBox img {
+  width: 100%;
+}
+
+.socialIcons img {
+  width: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
