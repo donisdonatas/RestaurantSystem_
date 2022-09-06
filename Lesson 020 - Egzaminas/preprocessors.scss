@@ -1,18 +1,19 @@
 $paragraphColor: rgb(136, 136, 136);
+$roseColor: rgb(252, 53, 149);
 $fontf: 'Inter', sans-serif;
-
-body {
-    min-width: 428px;
-    max-width: 575px;
-    margin: auto;
-    border: 1px solid rgba(200, 200, 200, 0.8);
-}
 
 @mixin h2text {
     margin: 0;
     font-size: 2.5em;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+}
+
+body {
+    min-width: 428px;
+    max-width: 575px;
+    margin: auto;
+    border: 1px solid rgba(200, 200, 200, 0.8);
 }
 
 header {
@@ -31,7 +32,8 @@ header {
 }
 
 nav {
-    display: none;
+    //display: none;
+    visibility:hidden;
 
     a {
         text-decoration: none;
@@ -55,21 +57,37 @@ nav {
 }
 
 
-/*
 .button {
-    width: 200px;
+    $border: 5px;
+    width: 250px;
     height: 60px;
+    padding: 20px;
     border: 5px solid transparent;
-    border-image: url("assets/assets/background.svg") 10% round;
-    border-radius: 20px;
-    padding: 10%;
+    border-image: linear-gradient(45deg, rgb(221, 145, 157) , rgb(255, 166, 0));
+    border-image-slice: 1;
+    border-radius: 10px;  /* !! no effect */
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 1.2em;
-    font-weight: bold;
+}
+
+/*
+.button {
+    width: 250px;
+    height: 60px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 */
 
+/*
 .button {
     width: 250px;
     height: 60px;
@@ -81,20 +99,23 @@ nav {
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+    text-decoration: none;
 }
+*/
 
 .lounch {
     font-size: 1.1em;
     font-weight: 500;
-    color: #FF3998;
+    color: $roseColor !important;
     margin-top: 20%;
 }
 
 .upsell {
     margin-top: 50px;
     margin-bottom: 20px;
-    height: 30vh;
+    height: 35vh;
     background-image: url("assets/assets/background.svg");
+    background-repeat: no-repeat;
     background-position-x: center;
     display: flex;
     align-items: flex-end;
@@ -117,10 +138,11 @@ nav {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
+    overflow: hidden;
+    height: 55vh;
 
     .imgBox {
         width: 200%;
-        z-index: -1;
 
         img {
             width: 100%;
@@ -132,12 +154,12 @@ nav {
 .press {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr fr;
+    grid-template-rows: 1fr 1fr;
     padding: 5%;
     
     .shortenName {
         height: 40px;
-        overflow: hidden;
+        //overflow: hidden;
     }
 
     img {
@@ -148,7 +170,8 @@ nav {
     }
 
     .hidenImg {
-        display: none;
+        //display: none;
+        visibility: hidden;
     }
 }
 
@@ -174,33 +197,46 @@ nav {
 }
 
 .cardsSection {
-    display: block;
+    display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
 }
 
 .card {
     width: 290px;
+    line-height: 1em;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    margin-right: 10%;
     
     .cardImage {
         width: 100%;
         margin: 0;
+        padding: 0;
     }
 
     .cardContent {
         display: flex;
         justify-content: space-between;
-        background-color: #EEEEEE;
         padding: 5%;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
+
+    p {
+        margin-top: 5px;
+    }
+}
+
+.card:last-child {
+    margin-right: 5%;
 }
 
 .serie {
     color: #FF8139;
+    font-size: 0.8em;
+}
 
+.bidaction {
+    color: #777777;
+    font-size: 0.8em;
 }
 
 .nftName, .nftPrice {
@@ -208,14 +244,213 @@ nav {
     font-size: 1.4em;
 }
 
-.nftNumber, .bidaction, .untilStart {
+.nftNumber, .untilStart {
     color: #777777;
+    font-size: 1.2em;
+}
+
+.leftColumn {
+    text-align: left;
+}
+
+.rightColumn {
+    text-align: right;
 }
 
 .nftNumber, .untilStart {
     font-size: 1.2em;
 }
 
+.footerupsell {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+
+    .imgBox {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+footer {
+    margin: 5%;
+    .imgLogo {
+        margin-top: 30px;
+    }
+    p{
+        color: $paragraphColor;
+        font-size: 1.2em;
+    }
+}
+
 .socialIcons img {
     width: 20px;
+}
+
+.footerTebles {
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 1.4em;
+    margin: 40px auto;
+}
+
+th {
+    width: 50%;
+    color: #777777;
+    padding: 10px;
+}
+
+td {
+    color: $paragraphColor;
+    padding: 10px;
+}
+
+.copyright {
+    height: 8vh;
+}
+
+.hiddenText {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 576px) {
+    body {
+        max-width: none;
+        width: 80%;
+        margin: auto;
+        border: 1px solid rgba(200, 200, 200, 0.8);
+    }
+
+    .hero {
+        //display: grid;
+        grid-template-columns: 50% 50%;
+        //grid-template-rows: 100%;
+        overflow: none;
+        //height: 55vh;
+        margin: 5%;
+    
+        .imgBox {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    nav {
+        visibility: visible;
+        
+        a {
+            text-decoration: none;
+            color: $paragraphColor;
+            font-size: 1.2em;
+            padding: 15px;
+        }
+
+        .signUpText {
+            color: $roseColor;
+        }
+    }
+
+    .upsell {
+        margin: 50px 5% 20px 5%;
+        height: 35vh;
+        background-image: url("assets/assets/background.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .press {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        //width: auto;
+        //margin: auto;
+        //justify-content: space-between;
+
+        img {
+            //display: flex;
+            padding: auto 0;
+            //justify-content: space-between;
+        }
+
+        .hidenImg {
+            visibility: visible;
+        }
+    }
+
+    .cardsSection {
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .card {
+        //width: 290px;
+        //line-height: 1em;
+        //background-color: #EEEEEE;
+        //border-radius: 15px;
+        margin-right: 10px;
+    }
+
+    .footerupsell {
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    
+        .imgBox {
+            display: flex;
+            align-items: center;
+    
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .footerTables {
+        display: flex;
+    }
+
+    table {
+        width: 45%;
+    }
+
+    th {
+        width: 50%;
+    }
+
+    .copyright {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .hiddenText {
+        visibility: visible;
+    }
 }
