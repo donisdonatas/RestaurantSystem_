@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Praktika su IF-ELSEIF-ELSE</title>
+</head>
+<body>
+    <h2>Užduotis Nr. 1</h2>
+    <p>Sukurk variable 'legalAge', kuris būtų lygus 20.
+        Antra variable 'clientAge' su bet kokiu skaičiumi.
+        Pasirašyk if-else, kuris alert išmestų ar klientas jau pasiekęs šį legalAge, ar dar ne.</p>
+    <form>
+        <input type="number" id="clientAge" name="age"><br>
+        <label for="clientAge">Įveskite savo amžių</label><br>
+        <button onclick="checkAge();" type="button">Ar tinkamas amžius</button>
+    </form>
+    <h3 id="isLegalAge"></h3>
+    
+    <h2>Užduotis Nr. 2</h2>
+    <p>Pasirašyk kintamą su savo vardu.
+        Sukurk if-else, kuris pasakys "Ilgas vardas", jei tavo vardas ilgesnis nei 6 raidės.
+        Kitu atveju, nieko neišmes.</p>
+    <form>
+        <input type="text" id="myName" name="name"><br>
+        <label for="myName">Įveskite savo amžių</label><br>
+        <button onclick="checkNameLenght();" type="button">Ar mano vardas ilgas?</button>
+    </form>
+    <h3 id="nameLenght"></h3>
+
+    <h2>Užduotis Nr. 3</h2>
+    <p>Sukurt kintamąjį su savo amžiumi.
+        Patikrink: jei amžius didesnis nei 100, arba mažesnis nei 0 - tegul išmeta "Invalid age";
+        jei tarp 1 ir 18 - "Child"; jei tarp 19 ir 99 - "Adult".</p>
+    <form>
+        <input type="number" id="myAge" name="age2"><br>
+        <label for="myAge">Įveskite savo amžių</label><br>
+        <button onclick="checkAge2();" type="button">Patikrink mano amžių</button>
+    </form>
+    <h3 id="isLegalAge2"></h3>
+ 
+    <h2>Užduotis Nr. 4</h2>
+    <p>Sukurk variable 'car', kuris bus lygus kažkokiam automobilio prekės ženklui.
+        Sukurk if-else, kuris pasakys ar tas brand'as priklauso VW Group, ar BMW Group, ar nei vienam.
+        VW group priklauso: VW, Audi, Bentley, Bugatti, Lamborghini, Porsche.
+        BMW group priklauso: BMW, Mini, Rolls-Royce.</p>
+    <form>
+        <input type="text" id="carBrand" name="car"><br>
+        <label for="carBrand">Įveskite mašinos markę</label><br>
+        <button onclick="checkCarGroup();" type="button">Kokiai grupei priklauso mašina?</button>
+    </form>
+    <h3 id="carGroup"></h3>
+</body>
+</html>

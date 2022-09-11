@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>NFT Landing page</title>
 </head>
 <body>
     <header>
-        <img src="assets\assets\logo.svg" alt="NFT Landing logo">
+        <img class="logo" src="assets/assets/logo.svg" alt="NFT Landing logo">
+        <img class="hamburgerMenu" src="social-icons/justify.svg" alt="Hamburger menu">
         <nav>
             <a href="#">Feutures</a>
             <a href="#">About</a>
@@ -19,39 +21,123 @@
         </nav>
     </header>
     <section class="hero">
-        <p>LAUNCHING SOON</p>
-        <h1>An NFT liko no other</h1>
-        <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live</p>
-        <a class="button" href="#">Sign Up</a>
+        <div class="textBox">
+            <p class="lounch">LAUNCHING SOON</p>
+            <h1>An NFT like no other</h1>
+            <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live</p>
+            <a class="button" href="#">Sign Up</a>
+        </div>
+        <div class="imgBox">
+            <img src="assets/assets/graphic.svg" alt="OneEye NFT">
+        </div>
     </section>
     <section class="upsell">
-        <h2>Free NFT for early birds</h2>
-        <p>Sign up todayand you will get a free NFT when we lounch.</p>
+        <div>
+            <h2>Free NFT for early birds</h2>
+            <p>Sign up todayand you will get a free NFT when we lounch.</p>
+        </div>
     </section>
     <section class="press">
-        <img src="assets/assets/companies/1.svg" alt="Boomerang">
+        <img class="shortenName" src="assets/assets/companies/1.svg" alt="Boomerang">
         <img src="assets/assets/companies/2.svg" alt="Blimp">
         <img src="assets/assets/companies/3.svg" alt="qrco">
-        <img src="assets/assets/companies/4.svg" alt="OpenDoor">
+        <img class="hidenImg" src="assets/assets/companies/4.svg" alt="OpenDoor">
         <img src="assets/assets/companies/5.svg" alt="Droplet">
     </section>
     <section class="showcase">
-        <h2>LE Super Rare Auction</h2>,
-        <p>We have released for limited edition NFTs early wich can by bid on via <a href="#">OpenSea</a>.</p>
+        <h2>LE Super Rare Auction</h2>
+        <p class="showText">We have released for limited edition NFTs early wich can by bid on via <a href="#">OpenSea</a>.</p>
+        <div class="cardsSection">
+            <div class="card">
+                <div class="cardImage">
+                    <img src="assets/assets/ntfs/nft-1.svg" alt="NFT1">
+                </div>
+                <div class="cardContent">
+                    <div class="leftColumn">
+                        <p class="serie">GLOOP SERIES</p>
+                        <p class="nftName">Purple Man</p>
+                        <p class="nftNumber">#12983</p>
+                    </div>
+                    <div class="rightColumn">
+                        <p class="bidaction">TOP BID</p>
+                        <p class="nftPrice"><img src="assets/assets/eth.svg" alt="ETH logo"> 2.99 ETH</p>
+                        <p class="untilStart">1 day Left</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage">
+                    <img src="assets/assets/ntfs/nft-2.svg" alt="NFT2">
+                </div>
+                <div class="cardContent">
+                    <div class="leftColumn">
+                        <p class="serie">GLOOP SERIES</p>
+                        <p class="nftName">Beige</p>
+                        <p class="nftNumber">#12983</p>
+                    </div>
+                    <div class="rightColumn">
+                        <p class="bidaction">TOP BID</p>
+                        <p class="nftPrice"><img src="assets/assets/eth.svg" alt="ETH logo"> 2.99 ETH</p>
+                        <p class="untilStart">1 day Left</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage">
+                    <img src="assets/assets/ntfs/nft-3.svg" alt="NFT3">
+                </div>
+                <div class="cardContent">
+                    <div class="leftColumn">
+                        <p class="serie">GLOOP SERIES</p>
+                        <p class="nftName">Red Man</p>
+                        <p class="nftNumber">#12983</p>
+                    </div>
+                    <div class="rightColumn">
+                        <p class="bidaction">TOP BID</p>
+                        <p class="nftPrice"><img src="assets/assets/eth.svg" alt="ETH logo"> 2.99 ETH</p>
+                        <p class="untilStart">1 day Left</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage">
+                    <img src="assets/assets/ntfs/nft-4.svg" alt="NFT4">
+                </div>
+                <div class="cardContent">
+                    <div class="leftColumn">
+                        <p class="serie">GLOOP SERIES</p>
+                        <p class="nftName">Green</p>
+                        <p class="nftNumber">#12983</p>
+                    </div>
+                    <div class="rightColumn">
+                        <p class="bidaction">TOP BID</p>
+                        <p class="nftPrice"><img src="assets/assets/eth.svg" alt="ETH logo"> 2.99 ETH</p>
+                        <p class="untilStart">1 day Left</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="footerupsell">
-        <p>LAUNCHING SOON</p>
-        <h1>An NFT liko no other</h1>
-        <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live</p>
-        <a class="button" href="#">Sign Up</a>
+        <div class="textBox">
+            <p class="lounch">LAUNCHING SOON</p>
+            <h1>An NFT liko no other</h1>
+            <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live</p>
+            <a class="button" href="#">Sign Up</a>
+        </div>
+        <div class="imgBox">
+            <img src="assets/assets/upsell-footer-image.svg" alt="Upsell NFT">
+        </div>
     </section>
     <footer>
-        <img src="assets\assets\logo.svg" alt="NFT Landing logo">
+        <img class="imgLogo" src="assets\assets\logo.svg" alt="NFT Landing logo">
         <p>Exclusive NFT Collection</p>
-        <img src="social-icons/facebook.svg" alt="Facebook icon">
-        <img src="social-icons/twitter.svg" alt="Twitter icon">
-        <img src="social-icons/instagram.svg" alt="Instagram icon">
-        <img src="social-icons/tiktok.svg" alt="TikTok icon">
+        <div class="socialIcons">
+            <img src="social-icons/facebook.svg" alt="Facebook icon">
+            <img src="social-icons/twitter.svg" alt="Twitter icon">
+            <img src="social-icons/instagram.svg" alt="Instagram icon">
+            <img src="social-icons/tiktok.svg" alt="TikTok icon">
+        </div>
         <div class="footerTables">
             <table>
                 <thead>
@@ -94,9 +180,9 @@
                 </tbody>
             </table>
         </div>
-        <div>
+        <div class="copyright">
             <p>&copy; Copyright 2022 NFTlanding</p>
-            <p>Launcing August 2022</p>
+            <p class="hiddenText">Launcing August 2022</p>
         </div>
     </footer>
 </body>
