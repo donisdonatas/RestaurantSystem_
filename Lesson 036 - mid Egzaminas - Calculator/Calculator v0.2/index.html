@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/main.js"></script>
+    <title>Skaičiuotuvas</title>
+</head>
+<body>
+    <div class="calculator">
+        <p id="monitor"></p>
+        <button class="backSign" type="button" onclick="backSpace();">Back</button>
+        <button class="clearSign" type="button" onclick="clearMonitor();">Clear</button>
+        <br>
+        <button class="numbers" type="button" onclick="getNumber(this);">7</button>
+        <button class="numbers" type="button" onclick="getNumber(this);">8</button>
+        <button class="numbers" type="button" onclick="getNumber(this);">9</button>
+        <button class="mathSigns" type="button" onclick="getSign(this);">/</button>
+        <br>
+        <button class="numbers" type="button" onclick="getNumber(this);">4</button>
+        <button class="numbers" type="button" onclick="getNumber(this);">5</button>
+        <button class="numbers" type="button" onclick="getNumber(this);">6</button>
+        <button class="mathSigns" type="button" onclick="getSign(this);">*</button>
+        <br>
+        <button class="numbers" type="button" onclick="getNumber(this);">1</button>
+        <button class="numbers" type="button" onclick="getNumber(this);">2</button>
+        <button class="numbers" type="button" onclick="getNumber(this);">3</button>
+        <button class="mathSigns" type="button" onclick="getSign(this);">-</button>
+        <br>
+        <button class="numbers" type="button" onclick="getNumber(this);">0</button>
+        <button class="decimalSign" type="button" onclick="addDecimal();">.</button>
+        <button class="equalSign" type="button" onclick="printAnswer();">=</button>
+        <button class="mathSigns" type="button" onclick="getSign(this);">+</button>
+        <br><br>
+    </div>
+</body>
+</html>

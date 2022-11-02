@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Lesson 024 - Add Property Page</title>
+</head>
+<body>
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <h1 class="title">Add your property for sale</h1>
+            <p class="subtitle">Yes, you can sell where you live, and get cach!</p>
+        </div>
+    </header>
+    <section class="section is-small">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <button id="link" class="button is-primary">Go To List</button>
+                </div>
+            </div>
+        </nav>
+        <h2 class="title">Add property</h1>
+            <div class="field">
+                <label class="label">img</label>
+                <div class="control">
+                  <input id="image" class="input is-link" type="text" placeholder="https://">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Price, EUR</label>
+                <div class="control">
+                  <input id="price" class="input" type="number" placeholder="50000">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Description</label>
+                <div class="control">
+                    <textarea id="description" class="textarea" placeholder="Add some description here..."></textarea>
+                </div>
+            </div>
+            <div class="select is-normal">
+                <select id="city">
+                  <option>Vilnius</option>
+                  <option>Kaunas</option>
+                  <option>Klaipėda</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button id="add" class="button is-primary">Add property</button>
+            </div>
+    </section>
+    <script src="add.js"></script>
+</body>
+</html>

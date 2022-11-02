@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Lesson 028</title>
+</head>
+<body>
+    <h1>createTextNode vs innerHTML vs textContent</h1>
+
+    <h1>Clear the element</h1>
+
+    <ol id="elem">
+        <li>Hello</li>
+        <li>World</li>
+    </ol>
+
+    <button type="button" onclick="clearElem();">Click to Clear</button>
+
+    <h1>Why does "aaa" remain?</h1>
+
+    <table id="table">
+        aaa
+        <tr>
+            <td>Test</td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="removeTable();">Click to Remove</button>
+
+    <h1 id="createList">Create a list</h1>
+    <button type="button" onclick="getWishListItem();">Create list!</button><br>
+
+    <h1>Create a tree from the object</h1>
+    <div class="data">
+        <ul>
+            <li>Fish
+                <ul>
+                    <li>trout</li>
+                    <li>salmon</li>
+                </ul>
+            </li>
+            <li>Tree
+                <ul>
+                    <li>Huge
+                        <ul>
+                            <li>sequoia</li>
+                            <li>oak</li>
+                        </ul>
+                    </li>
+                    <li>Flowering
+                        <ul>
+                            <li>apple tree</li>
+                            <li>magnolia</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="treeContainer"></div>
+
+    <button type="button" onclick="treeInitialization();">Create tree!</button><br>
+
+    <h1>Create a calendar</h1>
+    <input type="number" name="year">
+    <input type="number" name="month">
+
+    <button type="button" onclick="calendarInitialization();">Create calendar</button><br>
+	<div id="calendar"></div>
+
+    <h1>Colored clock with setInterval</h1>
+
+    <div id="clock"><p><span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span></p></div>
+    <button type="button" onclick="startClock();">Start</button>
+    <button type="button" onclick="stopClock();">Stop</button>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <script src="scripts/main.js"></script>
+        <style>
+            td, th {border: 1px solid black;}
+            table {border-collapse: collapse;}
+        </style>
+        <title>DOM manipuliacija</title>
+    </head>
+    <body>
+        <h2>DOM manipuliacija</h2>
+        <p id ='text'>JavaScript pratimai</p>
+        <div>
+            <button id="jsstyle" onclick="js_style()">Prideti stiliu</button>
+        </div>
+
+
+        <h2>Return first and last name from a form - w3resource</h2>
+
+        <form id="form1">
+            First name: <input type="text" name="fname" value="David"><br>
+            Last name: <input type="text" name="lname" value="Beckham"><br>
+            <button type="button" onclick="getFormValue();">Get Full Name</button>
+        </form>
+
+        <h3 id="fullName"></h3>
+
+        <h2>Parašykite JavaScript funkciją, kuri prideda eilutę į lentelę.</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th>Pirmas stulpelis</th>
+                    <th>Antras stulpelis</th>
+                    <th>Trečias stulpelis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Pirma eilutė</th>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <th>Antra eilutė</th>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <th>Trečia eilutė</th>
+                    <td>31</td>
+                    <td>32</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="addRow();">Add Row</button>
+    </body>
+</html>

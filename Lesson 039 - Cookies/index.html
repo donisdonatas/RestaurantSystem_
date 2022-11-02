@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cookies and LocalStorage</title>
+</head>
+<body>
+    <h1>Cookies Lesson</h1>
+    <form id="writeCookies">
+        <label for="Name">Įveskite vardą</label>
+        <input type="text" name="Name" id="Name">
+        <button type="submit" onclick="writeToCookies();">Write</button>
+    </form>
+
+    <form id="deleteCookies">
+        <p id="nameInCookies"></p>
+        <button type="submit" onclick="deleteCookies();">Delete</button>
+    </form>
+    <br>
+    <button type="submit" onclick="checkNameInCookies();">Check Cookies</button>
+</body>
+<script src="main.js"></script>
+</html>

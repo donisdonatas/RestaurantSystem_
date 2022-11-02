@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Užduotis Nr 1.</h3>
+    <label for="vardas">Įveskite vardą</label><br>
+    <input type="text" id="vardas"><br>
+    <button type="button" onclick="getName();">Paalertink vardą</button><br><br>
+
+    <h3>Užduotis Nr 2.</h3>
+    <button type="button" onclick="getRandomNumber();">Random skaičius</button>
+    <p id="randomNumber"></p>
+
+    <h3>Užduotis Nr 3.</h3>
+    <label for="vardas1">Įveskite vardą: </label>
+    <input type="text" id="vardas1"><br>
+    <label for="pavarde1">Įveskite pavardę: </label>
+    <input type="text" id="pavarde1"><br>
+    <button type="button" onclick="lengthOfFullName();">Suskaičiuoti raides</button>
+    <p id="kiekRaidziu"></p>
+
+    <h3>Užduotis Nr 4.</h3>
+    <label for="raidesId">Įveskite skaičių nuo 1 iki 32: </label>
+    <input type="number" id="raidesId"><br>
+    <button type="button" onclick="getLetter();">Rasti raidę</button>
+    <p id="kokiaRaide"></p>
+
+    <h3>Užduotis Nr 5.</h3>
+    <label for="n1">Įveskite parametrą n1: </label>
+    <input type="number" id="n1"><br>
+    <label for="n2">Įveskite parametrą n2: </label>
+    <input type="number" id="n2"><br>
+    <label for="operator">Pasirinkite veiksmą: </label>
+    <select name="function" id="operator">
+        <option value="sum">Suma</option>
+        <option value="sum1">Suma (err)</option>
+        <option value="sub">Atimtis</option>
+        <option value="div">Dalyba</option>
+        <option value="multi">Daugyba</option>
+    </select>
+    <button type="button" onclick="makeCalculations();">Suskaičiuok</button>
+    <p id="atsakymas"></p>
+
+    <h3>Užduotis Nr 6.</h3>
+    <button type="button" onclick="randomSquare();">Atsitiktinio skaičiaus kvardatas</button>
+    <p id="randomKvadratas"></p>
+</body>
+</html>

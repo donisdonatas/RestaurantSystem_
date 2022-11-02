@@ -1,0 +1,26 @@
+function makeChange() {
+    const link = document.querySelector('a');
+    link.textContent = 'Mozilla Developer Network';
+    link.href = 'https://developer.mozilla.org';
+}
+
+function placeNewNode() {
+    const sect = document.querySelector('section');
+    const para = document.createElement('p');
+    para.textContent = 'We hope you enjoyed the ride.';
+    sect.appendChild(para);
+}
+
+function createNode() {
+    const text = document.createTextNode(' — the premier source for web development knowledge.');
+    const linkPara = document.querySelector('p');
+    linkPara.appendChild(text);
+}
+
+function moveParagraph() {
+    const sect = document.querySelector('section');
+    const text = document.createTextNode(' — the premier source for web development knowledge.');
+    const linkPara = document.querySelector('p');
+    linkPara.appendChild(text);
+    sect.appendChild(linkPara);
+}

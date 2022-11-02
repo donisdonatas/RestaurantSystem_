@@ -1,0 +1,59 @@
+.calculator {
+    border: 2px solid rgb(0, 75, 0);
+    box-shadow: 5px 5px 10px rgb(14, 51, 14);
+    width: 470px;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+#monitor {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px auto;
+    height: 80px;
+    width: 400px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    padding: 3px;
+    background-color: rgb(212, 233, 252);
+    font-size: 1.8em;
+}
+
+#answer {
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(0, 0, 85);
+}
+
+.numbers, .decimalSign, .equalSign, .mathSigns {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    padding: 3px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.mathSigns {
+    background-color: rgb(83, 83, 83);
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.equalSign {
+    background-color: rgb(47, 189, 158);
+}
+
+.clearSign, .backSign {
+    /*display: grid;
+    justify-content: end;*/
+    /*/flex-direction: row;*/
+    background-color: rgb(201, 90, 26);
+    font-size: 2em;
+    /*margin-left: 30%;*/
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+}

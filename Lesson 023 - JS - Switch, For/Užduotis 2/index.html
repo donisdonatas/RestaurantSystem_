@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Switch</title>
+</head>
+<body>
+    <p>1. Priklausomai nuo įvesto amžiaus atspausdinkite konsolėje, žmogus pilnametis, ar ne.<br>
+        Naudokite ternary operatorių.</p>
+    <input type="number" id="age" name="age"><br>
+    <label for="age">Įveskite savo amžių</label><br>
+    <button type="button" onclick="checkAge();">Ar tu pilnametis?</button><br>
+
+
+    <p>2. Įprasta prekės kaina - 5€, nuolaidos kortelės savininkams - 2€.<br>
+    Išspausdinkite tinkamą kainą konsolėje priklausomai nuo to, ar klientas nuolaidos kortelės savininkas, ar ne.<br>
+    Panaudokite ternary operatorių ir boolean.</p>
+
+    <label for="card">Ar turite nuolaidos kertelę?</label>
+    <select name="card" id="card">
+        <option value=true>Taip</option>
+        <option value=false>Ne</option>
+    </select><br>
+    <button type="button" onclick="checkPrice();">Parodyti prekės kainą.</button><br>
+
+
+
+    <p>Paprašyti vartotojo įvesti bet kokį skaičių. Išvesti skaičių sumą nuo 1 iki įvesto skaičiaus.</p>
+    <label for="enterNumber">Įveskite numerį</label><br>
+    <input type="number" id="enterNUmber" name="sumNUmber"><br>
+    <button type="button" onclick="sumNumbers();">Susumuok skaičių seką.</button><br>    
+</body>
+</html>

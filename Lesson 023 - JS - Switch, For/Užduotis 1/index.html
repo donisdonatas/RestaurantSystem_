@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Switch</title>
+</head>
+<body>
+    <p>1. Įvedus savaitės dienos skaičių, turi būti išspausdintas dienos pavadinimas konsolėje.<br>
+        Pvz. įvedus 1, turi būti išspausdinta "pirmadienis".<br>
+        Jeigu skaičius nėra nuo 1 iki 7, turi būti išspausdintas klaidos pranešimas.</p>
+    <input type="number" id="dayNumber" name="weekDay" min="1" max="7"><br>
+    <label for="dayNumber">Įveskite skaičių nuo 1 iki 7</label><br>
+    <button type="button" onclick="whatIsDayName();">Kokia savaitės diena?</button><br>
+
+    <p>2. Įvedus metus ir mėnesio numerį, turi būti išspausdintas mėnesio dienų skaičius.<br>
+        Atsargiai, dėl vasario mėnesio, jo dienų skaičius skiriasi priklausomai nuo metų<br>
+         - kodas turi užtikrinti, kad bus atspausdintas teisingas vasario mėnesio dienų skaičius!</p>
+    <input type="number" id="yearNumber" name="year"><br>
+    <label for="yearNumber">Įveskite metus</label><br>
+    <input type="number" id="monthNumber" name="day"><br>
+    <label for="monthNumber">Įveskite mėnesio numerį</label><br>
+    <button type="button" onclick="howDaysIsInMonth();">Kiek mėnesis turi dienų?</button><br>    
+</body>
+</html>

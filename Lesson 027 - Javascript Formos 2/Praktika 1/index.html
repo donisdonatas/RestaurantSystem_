@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Užduotis Nr 1.</h3>
+    <label for="stazas">Įveskite darbo stažą</label><br>
+    <input type="number" id="stazas">
+    <button type="button" onclick="getBonus();">Koks mano bonusas?</button>
+    <p id="bonusas"></p>
+
+
+    <h3>Užduotis Nr 2.</h3>
+    <label for="metai">Įveskite metus</label><br>
+    <input type="number" id="metai">
+    <button type="button" onclick="getDaysNumber();">Kiek metai turi dienų</button>
+    <p id="dienos"></p>
+
+    <h3>Užduotis Nr 3.</h3>
+    <label for="celcijus">Įveskite temperatūrą, C</label><br>
+    <input type="number" id="celcijus">
+    <button type="button" onclick="convertCtoF();">Konvertuoti C į F</button>
+    <p id="farenheitFromCelcius"></p>
+
+    <h3>Užduotis Nr 4.</h3>
+    <label for="email">Įveskite el. paštą</label>
+    <input type="email" id="email"><br>
+    <input type="checkbox" id="sutinku">
+    <label for="sutinku">Sutinku</label>
+    <button type="button" onclick="createRegistration();">Sutinku gauti laiškus</button>
+
+    <h3>Užduotis Nr 5.</h3>
+    <label for="vardas">Įvesk vardą</label>
+    <input type="text" id="vardas">
+    <label for="skaicius">Įveskite skaičių</label>
+    <input type="number" id="skaicius">
+    <button type="button" onclick="createList();">Padaryk sąrašą</button>
+    <ul id="sarasas"></ul>
+
+    <h3>Užduotis Nr 6.</h3>
+    <label for="trikampis">Įveskite skaičių</label>
+    <input type="number" id="trikampis">
+    <button type="button" onclick="createTriangle();">Pavaizduoti trikampį</button>
+    <div id="viewTriangle"></div>
+</body>
+</html>

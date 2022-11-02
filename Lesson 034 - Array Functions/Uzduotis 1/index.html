@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Lesson 034</title>
+</head>
+<body>
+    <h1>1. Translate border-left-width to borderLeftWidth</h1>
+    <label for="textWithDash">Imput Text with Dash</label><input type="text" id="textWithDash">
+    <button type="button" onclick="camelize();">Transform Text</button>
+    <p id="camelizeText"></p>
+
+    <h1>2. Filter range</h1>
+    <button type="button" onclick="initializeFilter();">Transform Text</button>
+    <p id="originalArray2"></p>
+    <p id="filteredArray2"></p>
+
+    <h1>3. Filter range "in place"</h1>
+    <button type="button" onclick="initializeFilterRange();">Filter Range</button>
+    <p id="originalArray3"></p>
+    <p id="filteredArray3"></p>
+
+    <h1>4. Sort in decreasing order</h1>
+    <button type="button" onclick="initializeSort();">Sort decreasing</button>
+    <p id="originalArray4"></p>
+    <p id="sortedArray4"></p>
+
+    <h1>5. Copy and sort array</h1>
+    <button type="button" onclick="initializeCopySort();">Copy and Sort Array</button>
+    <p id="originalArray5"></p>
+    <p id="sortedArray5"></p>
+
+    <h1>6. Create an extendable calculator</h1>
+    <label for="mathString">Enter two values to sum</label>
+    <input type="text" name="mathOperations" id="mathString">
+    <button type="button" onclick="makeCalculations();">Calculate</button>
+    <p id="mathOutput"></p>
+
+    <h1>7. Map to names</h1>
+    <button type="button" onclick="mapNames();">Map Names</button>
+    <p id="namesArray"></p>
+
+    <h1>8. Shuffle an array</h1>
+    <button type="button" onclick="shufleArray();">Shufle Array</button>
+    <p id="originalArray8"></p>
+    <p id="shufleArray8"></p>
+
+    <h1>9. Get average age</h1>
+    <button type="button" onclick="getAverageAge();">Get average Age</button>
+    <p id="averageAge"></p>
+
+    <h1>10. Filter unique array members</h1>
+    <button type="button" onclick="uniqueArray();">Get unique Array with for-of</button>
+    <button type="button" onclick="uniqueArray2();">Get unique Array with Set</button>
+    <p id="uniqueArray"></p>
+    <p id="uniqueArray2"></p>
+
+    <h1>11. Create keyed object from array</h1>
+    <button type="button" onclick="createObject();">Create Object</button>
+    <p id="object"></p>
+</body>
+</html>
