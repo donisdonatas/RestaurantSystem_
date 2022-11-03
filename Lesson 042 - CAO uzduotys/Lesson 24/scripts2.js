@@ -104,7 +104,6 @@ const navButtons = document.querySelectorAll('.navbar-start');
 
 navButtons.forEach(navButton => {
     navButton.addEventListener('click', event => {
-        
         filterByCity(event);
     });
 })
