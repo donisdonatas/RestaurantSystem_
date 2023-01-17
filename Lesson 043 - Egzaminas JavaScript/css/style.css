@@ -7,6 +7,6 @@ h1, h2 {
     margin: 2px;
 }
 
-.taskBox {
+.taskBox:not(:last-of-type) {
     border-bottom: 1px solid black;
 }

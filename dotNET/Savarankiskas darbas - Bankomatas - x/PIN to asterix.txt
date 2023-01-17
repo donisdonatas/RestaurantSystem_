@@ -1,0 +1,59 @@
+//https://www.c-sharpcorner.com/forums/password-in-c-sharp-console-application
+
+using System;
+using System.Threading;
+
+class Program
+{
+   static void Main(string[] args)
+   {
+      Console.Write("Enter your user name : ");
+      string userName = Console.ReadLine();
+      Console.Write("Enter your password  : ");
+      string password = ReadPassword();
+      Console.WriteLine("\nIf nobody's looking over your shoulder");
+      Console.WriteLine("I'm going to confirm the password you gave");
+      Console.WriteLine("All input will be erased after 10 seconds");
+      Console.WriteLine("\nPress any key to see it now");
+      Console.ReadKey(true);
+      Console.Write("\nThe password entered is : " + password);
+      Thread.Sleep(10000);
+      Console.Clear();
+      Console.ReadKey(true);
+   }
+
+   public static string ReadPassword()
+   {
+      string password = "";
+      ConsoleKeyInfo info = Console.ReadKey(true);
+      while (info.Key != ConsoleKey.Enter)
+      {
+          if (info.Key != ConsoleKey.Backspace)
+          {
+             Console.Write("*");
+             password += info.KeyChar;
+          }
+          else if (info.Key == ConsoleKey.Backspace)
+          {
+             if (!string.IsNullOrEmpty(password))
+             {
+                // remove one character from the list of password characters
+                password = password.Substring(0, password.Length - 1);
+                // get the location of the cursor
+                int pos = Console.CursorLeft;
+                // move the cursor to the left by one character
+                Console.SetCursorPosition(pos - 1, Console.CursorTop);
+                // replace it with space
+                Console.Write(" ");
+                // move the cursor to the left by one character again
+                Console.SetCursorPosition(pos - 1, Console.CursorTop);
+             }
+          }
+          info = Console.ReadKey(true);
+      }
+
+      // add a new line because user pressed enter at the end of their password
+      Console.WriteLine();
+      return password;
+   }
+}

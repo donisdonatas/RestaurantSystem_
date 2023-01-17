@@ -1,0 +1,5 @@
+This is Hexagon. It's Area is 166,276877526612
+This is Hexagon. It's Area is 210,444173119619
+This is Hexagon. It's Area is 259,807621135332
+This is Hexagon. It's Area is 314,367221573751
+This is Hexagon. It's Area is 374,122974434878
